@@ -27,8 +27,8 @@
   left: 50%;
   width: 90vw;
   max-width: 450px;
-  height: 609px;
-  padding: 8px;
+  height: auto;
+  padding: 40px;
   transform: translate(-50%, -50%) scale(1) rotate(0deg);
   background-color: getColor('secondary');
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -36,13 +36,13 @@
   border-radius: 4px;
   @include desktop {
     width: 528px;
-    // padding: 16px 32px 18px 32px;
   }
 
   &__button-close {
+    position: absolute;
     cursor: pointer;
-    display: flex;
-    align-self: flex-end;
+    right: 8px;
+    top: 8px;
     width: 30px;
     height: 30px;
     background-color: getColor('secondary');
@@ -54,16 +54,13 @@
     padding: 3px;
     fill: getColor('primary');
   }
-
   p {
     text-align: center;
-    padding: 2px 40px 2px 40px;
     font-weight: 700;
     font-size: 20px;
     line-height: 1.15;
     letter-spacing: 0.03em;
   }
-
   label {
     display: flex;
     flex-direction: column;
@@ -75,11 +72,10 @@
   }
 }
 .form {
-  padding: 0 40px;
   align-items: center;
-
   &__item {
     display: block;
+    position: relative;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     padding: 11px 0 11px 12px;
@@ -90,7 +86,8 @@
       border: none;
       outline: none;
       padding-left: 12px;
-
+      max-width: 340px;
+      width: 100%;
       &:focus {
         outline: none;
       }
@@ -99,6 +96,11 @@
       border-color: getColor('brand-color');
       fill: getColor('brand-color');
     }
+  }
+  &__icon {
+    position: absolute;
+    top: 14px;
+    left: 14px;
   }
   &__comment-item {
     margin-top: 4px;
@@ -126,14 +128,13 @@
 .form-licens {
   display: flex;
   align-items: baseline;
-  padding: 20px 45px 30px 45px;
   color: getColor('text-color-primary');
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
   column-gap: 8px;
-
+  row-gap: 20px;
   &__label {
     top: 3px;
     position: relative;
@@ -187,6 +188,6 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     border: none;
-    margin-bottom: 40px;
+    margin-top: 31px;
   }
 }

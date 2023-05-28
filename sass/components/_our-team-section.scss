@@ -1,6 +1,5 @@
 .our-team {
   background-color: getColor('bdg-secondary');
-  min-width: 480px;
   text-align: center;
   @include tablet {
     min-width: 768px;
@@ -17,6 +16,9 @@
     @include tablet {
       flex-direction: row;
       flex-wrap: wrap;
+    }
+    @include desktop {
+      flex-wrap: nowrap;
     }
   }
   &__item {
