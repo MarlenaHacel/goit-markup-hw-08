@@ -230,7 +230,7 @@
                   ./images/img4-270.jpg     270w,
                   ./images/img4-270@2xj.jpg 540w
                 "
-                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 100vw"
+                sizes="(min-width: 1200px) 270px, (min-width: 768px)354px,  100vw"
                 alt="zdjęcie John doe"
               />
               <figcaption>
@@ -271,7 +271,7 @@
                   ./images/img5-270.jpg    270w,
                   ./images/img5-270@2x.jpg 540w
                 "
-                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px,  100vw"
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 100vw"
                 alt="zdjęcie John doe"
               />
               <figcaption>
@@ -353,7 +353,7 @@
                   ./images/img7-270.jpg    270w,
                   ./images/img7-270@2x.jpg 540w
                 "
-                sizes="(min-width: 1200px) 270px,(min-width: 768px) 354px,  100vw"
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 100vw"
                 alt="zdjęcie John doe"
               />
               <figcaption>
@@ -415,10 +415,10 @@
     <footer class="footer">
       <div class="container">
         <div class="footer__address">
-          <a class="logo" href="index.html"
+          <a class="logo logo-f" href="index.html"
             ><span class="logo--color">Web</span><span class="logo--color-sec">Studio</span></a
           >
-          <address class="contact">
+          <address class="contact-f">
             <p>m. Warszawa, Aleje Jerozolimskie 21</p>
             <a class="contact__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
             <a class="contact__link" href="tel:+48111111111 ">+48 111 111 111</a>
@@ -452,15 +452,17 @@
 
         <div class="newsletter">
           <p class="footer__p">Zapisz się do newslettera</p>
-          <label>
-            <input class="footer__input" type="text" name="email" placeholder="E-mail" />
-          </label>
-          <button class="footer__button" type="submit">
-            <span class="footer__send">Zapisz się</span>
-            <svg width="24" height="24">
-              <use href="./images/icons.svg#icon-send"></use>
-            </svg>
-          </button>
+          <div class="footer__newsletter">
+            <label class="footer__label">
+              <input class="footer__input" type="text" name="email" placeholder="E-mail" />
+            </label>
+            <button class="footer__button" type="submit">
+              <span class="footer__send">Zapisz się</span>
+              <svg width="24" height="24">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </div>
         </div>
       </div>
     </footer>

@@ -2,10 +2,12 @@
   color: getColor('primary');
   font-family: $font-secondary;
   font-weight: 700;
-  font-size: 26px;
+  font-size: 24px;
   line-height: 1.2;
   letter-spacing: 0.03em;
-  margin-right: 93px;
+  @include desktop {
+    font-size: 26px;
+  }
   &--color {
     color: getColor('brand-color');
   }

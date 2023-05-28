@@ -26,8 +26,8 @@
   padding: 16px 32px 18px 32px;
   top: 50%;
   left: 50%;
-  width: 450px;
-  height: 600px;
+  max-width: 450px;
+  height: auto;
   padding: 8px;
   transform: translate(-50%, -50%) scale(1) rotate(0deg);
   background-color: getColor('secondary');
@@ -36,7 +36,6 @@
   border-radius: 4px;
   @include desktop {
     width: 528px;
-    height: 581px;
   }
 
   &__button-close {

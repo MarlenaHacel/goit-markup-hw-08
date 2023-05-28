@@ -1,10 +1,13 @@
 .contact {
   display: none;
   @include tablet {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
   }
   @include desktop {
-    display: inline-flex;
+    display: flex;
+    flex-direction: row;
     gap: 30px;
   }
 
@@ -13,13 +16,16 @@
     align-items: center;
     color: getColor('text-color-secondary');
     font-weight: 500;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.1;
     letter-spacing: 0.02em;
 
     transition-property: color, fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @include desktop {
+      font-size: 14px;
+    }
     &:hover,
     &:focus {
       color: getColor('brand-color');
