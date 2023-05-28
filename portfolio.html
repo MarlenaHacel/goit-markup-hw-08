@@ -30,6 +30,11 @@
     <header class="header">
       <div class="container">
         <a class="logo" href="index.html"><span class="logo--color">Web</span>Studio</a>
+        <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg width="40" height="40">
+            <use href="./images/icons.svg#icon-hamburger"></use>
+          </svg>
+        </button>
         <nav class="main-nav">
           <ul class="main-nav__list">
             <li class="main-nav__item"><a class="main-nav__link" href="index.html">Agencja</a></li>
@@ -291,5 +296,56 @@
         </div>
       </div>
     </footer>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg width="24" height="24">
+          <use href="./images/icons.svg#icon-vector"></use>
+        </svg>
+      </button>
+      <div>
+        <ul class="mobile-menu">
+          <li class="mobile-menu__item-l">
+            <a class="mobile-menu__link-l" href="index.html">Agencja</a>
+          </li>
+          <li class="mobile-menu__item-l">
+            <a class="mobile-menu__link-l mobile-active" href="portfolio.html">Portfolio</a>
+          </li>
+          <li class="mobile-menu__item-l">
+            <a class="mobile-menu__link-l" href="#">Kontakt</a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <div class="mobile-menu__contact">
+          <a class="mobile-menu__link-tel" href="tel:+48111111111"> +48 111 111 111 </a>
+          <a class="mobile-menu__link-mail" href="mailto:info@devstudio.com">
+            info@devstudio.com
+          </a>
+        </div>
+        <div class="mobile-menu__social">
+          <ul class="mobile-menu__list">
+            <li class="mobile-menu__item-s">
+              <a class="mobile-menu__link-s"> Instagram</a>
+            </li>
+            <li class="mobile-menu__item-s">
+              <a class="mobile-menu__link-s">Twitter</a>
+            </li>
+            <li class="mobile-menu__item-s">
+              <a class="mobile-menu__link-s"> Facebook</a>
+            </li>
+            <li class="mobile-menu__item-s">
+              <a class="mobile-menu__link-s">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>
