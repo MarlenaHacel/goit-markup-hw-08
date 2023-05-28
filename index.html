@@ -73,65 +73,6 @@
             <button class="first-section__button" data-modal-open type="button">
               Zamów usługe
             </button>
-            <div class="backdrop is-hidden" data-modal>
-              <div class="modal">
-                <button class="modal__button-close" data-modal-close type="button">
-                  <svg class="modal__icon-close" width="30" height="30">
-                    <use href="./images/icons.svg#icon-vector"></use>
-                  </svg>
-                </button>
-                <p>Zostaw swoje dane w formularzu poniżej</p>
-                <form class="form">
-                  <label for="username"> Imie </label>
-                  <div class="form__item">
-                    <svg width="12" height="12">
-                      <use href="./images/icons.svg#contact-icon"></use>
-                    </svg>
-                    <input type="text" id="username" name="username" />
-                  </div>
-                  <label for="telephone"> Telefon </label>
-                  <div class="form__item">
-                    <svg width="13" height="13">
-                      <use href="./images/icons.svg#icon-telephone"></use>
-                    </svg>
-                    <input type="text" id="telephone" name="telephone" />
-                  </div>
-                  <label for="email"> Email </label>
-                  <div class="form__item">
-                    <svg width="15" height="12">
-                      <use href="./images/icons.svg#icon-email"></use>
-                    </svg>
-                    <input type="text" id="email" name="email" />
-                  </div>
-                  <label>
-                    Komentarz
-                    <textarea
-                      class="form__comment-item"
-                      id="comment"
-                      rows="4"
-                      name="comennt"
-                      placeholder="Wprowadź tekst"
-                    >
-                    </textarea>
-                  </label>
-                </form>
-                <div class="form-licens">
-                  <label class="form-licens__label">
-                    <input class="form-licens__checkbox" type="checkbox" name="acept" />
-                    <span class="form-licens__checkbox-icon">
-                      <svg width="16" height="15">
-                        <use href="./images/icons.svg#icon-check"></use>
-                      </svg>
-                    </span>
-                  </label>
-                  <span>
-                    Oświadczam iż akceptuję <a class="form-licens__link" href="#">Regulamin</a> i
-                    <a class="form-licens__link" href="#">Politykę Prywatności.</a>
-                  </span>
-                </div>
-                <button class="form-licens__button" type="submit">Wyślij</button>
-              </div>
-            </div>
           </div>
         </div>
       </section>
@@ -466,6 +407,66 @@
         </div>
       </div>
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal__button-close" data-modal-close type="button">
+          <svg class="modal__icon-close" width="30" height="30">
+            <use href="./images/icons.svg#icon-vector"></use>
+          </svg>
+        </button>
+        <p>Zostaw swoje dane w formularzu poniżej</p>
+        <form class="form">
+          <label for="username"> Imie </label>
+          <div class="form__item">
+            <svg width="12" height="12">
+              <use href="./images/icons.svg#contact-icon"></use>
+            </svg>
+            <input type="text" id="username" name="username" />
+          </div>
+          <label for="telephone"> Telefon </label>
+          <div class="form__item">
+            <svg width="13" height="13">
+              <use href="./images/icons.svg#icon-telephone"></use>
+            </svg>
+            <input type="text" id="telephone" name="telephone" />
+          </div>
+          <label for="email"> Email </label>
+          <div class="form__item">
+            <svg width="15" height="12">
+              <use href="./images/icons.svg#icon-email"></use>
+            </svg>
+            <input type="text" id="email" name="email" />
+          </div>
+          <label>
+            Komentarz
+            <textarea
+              class="form__comment-item"
+              id="comment"
+              rows="4"
+              name="comennt"
+              placeholder="Wprowadź tekst"
+            >
+            </textarea>
+          </label>
+        </form>
+        <div class="form-licens">
+          <label class="form-licens__label">
+            <input class="form-licens__checkbox" type="checkbox" name="acept" />
+            <span class="form-licens__checkbox-icon">
+              <svg width="16" height="15">
+                <use href="./images/icons.svg#icon-check"></use>
+              </svg>
+            </span>
+          </label>
+          <span>
+            Oświadczam iż akceptuję <a class="form-licens__link" href="#">Regulamin</a> i
+            <a class="form-licens__link" href="#">Politykę Prywatności.</a>
+          </span>
+        </div>
+        <button class="form-licens__button" type="submit">Wyślij</button>
+      </div>
+    </div>
 
     <div class="menu-container js-menu-container" id="mobile-menu">
       <button class="menu-toggle js-close-menu">

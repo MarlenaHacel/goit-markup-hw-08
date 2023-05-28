@@ -23,11 +23,11 @@
   flex-direction: column;
   justify-content: center;
   transition: transform 250ms linear;
-  padding: 16px 32px 18px 32px;
   top: 50%;
   left: 50%;
+  width: 90vw;
   max-width: 450px;
-  height: auto;
+  height: 609px;
   padding: 8px;
   transform: translate(-50%, -50%) scale(1) rotate(0deg);
   background-color: getColor('secondary');
@@ -36,6 +36,7 @@
   border-radius: 4px;
   @include desktop {
     width: 528px;
+    // padding: 16px 32px 18px 32px;
   }
 
   &__button-close {
