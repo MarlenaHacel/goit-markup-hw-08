@@ -1,0 +1,43 @@
+.our-strength {
+  font-size: 14px;
+  padding-bottom: 0;
+  &__item {
+    margin: 0 15px;
+  }
+  &__list {
+    list-style-type: none;
+    @include tablet {
+      columns: 2;
+    }
+    @include desktop {
+      display: flex;
+    }
+  }
+  &__icon {
+    margin-bottom: 30px;
+    display: inline-block;
+    justify-content: center;
+    padding: 25px 100px;
+    background: getColor('bdg-secondary');
+    border-radius: 4px;
+    width: 450px;
+    height: 120px;
+    @include tablet {
+      width: 354px;
+    }
+    @include desktop {
+      width: 270px;
+    }
+  }
+  &__tittle {
+    line-height: 1.1;
+    margin-bottom: 10px;
+    text-align: center;
+    @include tablet {
+      text-align: left;
+    }
+  }
+  &__subtitle {
+    line-height: 1.7;
+  }
+}

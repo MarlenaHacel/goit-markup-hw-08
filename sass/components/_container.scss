@@ -1,0 +1,51 @@
+body {
+  font-family: $font-primary;
+  background: getColor('secondary');
+  color: getColor('text-color-primary');
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+h2 {
+  margin-top: 0;
+  margin-bottom: 50px;
+  text-align: center;
+  line-height: 1.2;
+  font-size: 36px;
+}
+p,
+h1,
+h3,
+h4,
+ul {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  max-width: 480px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+  @include tablet {
+    max-width: 768px;
+  }
+  @include desktop {
+    max-width: 1200px;
+  }
+}
+.section {
+  justify-content: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @include desktop {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}

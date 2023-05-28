@@ -1,0 +1,18 @@
+$colors: (
+  'primary': #000000,
+  'secondary': #ffffff,
+  'bgd-primary': #2f303a,
+  'bdg-secondary': #f5f4fa,
+  'bdg-image': rgba(47, 48, 58, 0.4),
+  'brand-color': #2196f3,
+  'text-color-primary': #212121,
+  'text-color-secondary': #757575,
+  'icon-primary': #afb1b8,
+  'link-primary': rgba(255, 255, 255, 0.6),
+);
+@function getColor($key) {
+  @return map-get($colors, $key);
+}
+
+$font-primary: 'Roboto', sans-serif;
+$font-secondary: 'Raleway';

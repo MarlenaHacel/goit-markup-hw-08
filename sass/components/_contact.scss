@@ -1,0 +1,42 @@
+.contact {
+  display: none;
+  @include tablet {
+    display: block;
+  }
+  @include desktop {
+    display: inline-flex;
+    gap: 30px;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    color: getColor('text-color-secondary');
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+
+    transition-property: color, fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      color: getColor('brand-color');
+      fill: getColor('brand-color');
+    }
+  }
+  &__icon {
+    fill: getColor('text-color-secondary');
+    margin-right: 10px;
+    display: block;
+    transition-property: color, fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__link:hover &__icon,
+  &__link:focus &__icon {
+    color: getColor('brand-color');
+    fill: getColor('brand-color');
+  }
+}
